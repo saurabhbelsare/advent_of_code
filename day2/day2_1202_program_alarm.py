@@ -5,6 +5,7 @@ import numpy as np
 def run_opcode(opcode_array):
     counter=0
     indicatorInt=opcode_array[counter]
+    print("Indicator Int is=", indicatorInt)
     while(indicatorInt != 99):
         if (indicatorInt == 1):
             int1=opcode_array[counter+1]
@@ -39,13 +40,13 @@ if __name__=="__main__":
     opcode_array[1] = 12
     opcode_array[2] = 2
 
-#    opcode_array=[1,9,10,3,2,3,11,0,99,30,40,50]
+##    opcode_array=[1,9,10,3,2,3,11,0,99,30,40,50]
     opcode_array2=run_opcode(opcode_array)
-    print("The final opcode output array is:")
-    print(opcode_array2)
+#    print("The final opcode output array is:")
+#    print(opcode_array2)
 
-    print("Value at position 0 in the final opcode output array is:")
-    print(opcode_array2[0])
+#    print("Value at position 0 in the final opcode output array is:")
+#    print(opcode_array2[0])
 
     ##### Part 2: Determining the pair of manual modification input values that will get the output to 19690720
 
@@ -56,7 +57,7 @@ if __name__=="__main__":
 
     opcode_array = [int(i) for i in opcode_array_str]
     opcode_array_bak = opcode_array
-    print(opcode_array_bak)
+#    print(opcode_array_bak)
 
     output_value=0
     for i in range(1,99):
@@ -73,4 +74,3 @@ if __name__=="__main__":
     print(output_value)
 
 
-## This is a test for committing
