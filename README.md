@@ -1,2 +1,5 @@
-# advent_of_code
-Codes for advent of code challenge (adventofcode.com/2019)
+# Advent of Code
+Codes for advent of code challenge adventofcode.com
+Currently partially completed for the years
+- 2019
+- 2020
